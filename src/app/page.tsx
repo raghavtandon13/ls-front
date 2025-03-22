@@ -1,6 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
+// ₹
 import Link from "next/link";
 import {
     ArrowRight,
@@ -20,12 +18,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
-    const [isLoaded, setIsLoaded] = useState(false);
-
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
-
     return (
         <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -77,7 +69,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-                            <div className={`space-y-4 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-4 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                                     Find Your Perfect Loan in Minutes, Not Days
                                 </h1>
@@ -108,7 +100,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div
-                                className={`mx-auto lg:mx-0 relative ${isLoaded ? "animate-slide-in-right" : "opacity-0"}`}
+                                className={`mx-auto lg:mx-0 relative ₹{isLoaded ? "animate-slide-in-right" : "opacity-0"}`}
                             >
                                 <div className="absolute -top-4 -left-4 bg-primary/10 w-full h-full rounded-lg animate-float"></div>
                                 <Card className="relative card-hover-effect">
@@ -129,11 +121,11 @@ export default function Home() {
                                                             Loan Amount
                                                         </label>
                                                         <select className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 transition-all duration-200 hover:border-primary">
-                                                            <option>$5,000</option>
-                                                            <option>$10,000</option>
-                                                            <option>$15,000</option>
-                                                            <option>$20,000</option>
-                                                            <option>$25,000+</option>
+                                                            <option>₹5,000</option>
+                                                            <option>₹10,000</option>
+                                                            <option>₹15,000</option>
+                                                            <option>₹20,000</option>
+                                                            <option>₹25,000+</option>
                                                         </select>
                                                     </div>
                                                     <div>
@@ -171,11 +163,11 @@ export default function Home() {
                                                             Loan Amount
                                                         </label>
                                                         <select className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 transition-all duration-200 hover:border-primary">
-                                                            <option>$10,000</option>
-                                                            <option>$25,000</option>
-                                                            <option>$50,000</option>
-                                                            <option>$100,000</option>
-                                                            <option>$250,000+</option>
+                                                            <option>₹10,000</option>
+                                                            <option>₹25,000</option>
+                                                            <option>₹50,000</option>
+                                                            <option>₹100,000</option>
+                                                            <option>₹250,000+</option>
                                                         </select>
                                                     </div>
                                                     <div>
@@ -221,7 +213,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className={`space-y-2 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-2 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
                                     Why Choose Us
                                 </div>
@@ -235,7 +227,7 @@ export default function Home() {
                         </div>
                         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
                             <Card
-                                className={`bg-background card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
+                                className={`bg-background card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
                             >
                                 <CardHeader className="pb-2">
                                     <CheckCircle className="h-10 w-10 text-primary mb-2 animate-pulse-soft" />
@@ -248,7 +240,7 @@ export default function Home() {
                                 </CardContent>
                             </Card>
                             <Card
-                                className={`bg-background card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
+                                className={`bg-background card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
                             >
                                 <CardHeader className="pb-2">
                                     <LineChart className="h-10 w-10 text-primary mb-2 animate-pulse-soft" />
@@ -261,7 +253,7 @@ export default function Home() {
                                 </CardContent>
                             </Card>
                             <Card
-                                className={`bg-background card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
+                                className={`bg-background card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
                             >
                                 <CardHeader className="pb-2">
                                     <CreditCard className="h-10 w-10 text-primary mb-2 animate-pulse-soft" />
@@ -280,7 +272,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-subtle">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-                            <div className={`space-y-4 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-4 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
                                     Personal Loans
                                 </div>
@@ -294,7 +286,7 @@ export default function Home() {
                                 <ul className="grid gap-2">
                                     <li className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>Loans from $1,000 to $100,000</span>
+                                        <span>Loans from ₹1,000 to ₹100,000</span>
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
@@ -316,7 +308,7 @@ export default function Home() {
                                 </Button>
                             </div>
                             <div
-                                className={`relative mx-auto lg:mx-0 ${isLoaded ? "animate-slide-in-right" : "opacity-0"}`}
+                                className={`relative mx-auto lg:mx-0 ₹{isLoaded ? "animate-slide-in-right" : "opacity-0"}`}
                             >
                                 <div className="absolute -top-4 -right-4 bg-primary/10 w-full h-full rounded-lg animate-float"></div>
                                 <Card className="relative card-hover-effect">
@@ -330,11 +322,11 @@ export default function Home() {
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Loan Amount</p>
-                                                <p className="text-xl font-bold">$15,000</p>
+                                                <p className="text-xl font-bold">₹15,000</p>
                                             </div>
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Monthly Payment</p>
-                                                <p className="text-xl font-bold">$283</p>
+                                                <p className="text-xl font-bold">₹283</p>
                                             </div>
                                         </div>
                                         <div className="grid grid-cols-3 gap-4">
@@ -348,7 +340,7 @@ export default function Home() {
                                             </div>
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Total Cost</p>
-                                                <p className="text-lg font-bold">$16,980</p>
+                                                <p className="text-lg font-bold">₹16,980</p>
                                             </div>
                                         </div>
                                         <div className="pt-2">
@@ -380,7 +372,7 @@ export default function Home() {
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                             <div
-                                className={`relative mx-auto lg:mx-0 order-2 lg:order-1 ${isLoaded ? "animate-slide-in-left" : "opacity-0"}`}
+                                className={`relative mx-auto lg:mx-0 order-2 lg:order-1 ₹{isLoaded ? "animate-slide-in-left" : "opacity-0"}`}
                             >
                                 <div className="absolute -top-4 -left-4 bg-primary/10 w-full h-full rounded-lg animate-float"></div>
                                 <Card className="relative card-hover-effect">
@@ -394,11 +386,11 @@ export default function Home() {
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Loan Amount</p>
-                                                <p className="text-xl font-bold">$50,000</p>
+                                                <p className="text-xl font-bold">₹50,000</p>
                                             </div>
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Monthly Payment</p>
-                                                <p className="text-xl font-bold">$1,054</p>
+                                                <p className="text-xl font-bold">₹1,054</p>
                                             </div>
                                         </div>
                                         <div className="grid grid-cols-3 gap-4">
@@ -412,7 +404,7 @@ export default function Home() {
                                             </div>
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Total Cost</p>
-                                                <p className="text-lg font-bold">$63,240</p>
+                                                <p className="text-lg font-bold">₹63,240</p>
                                             </div>
                                         </div>
                                         <div className="pt-2">
@@ -437,7 +429,7 @@ export default function Home() {
                                 </Card>
                             </div>
                             <div
-                                className={`space-y-4 order-1 lg:order-2 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}
+                                className={`space-y-4 order-1 lg:order-2 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}
                             >
                                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
                                     Business Loans
@@ -452,7 +444,7 @@ export default function Home() {
                                 <ul className="grid gap-2">
                                     <li className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>Loans from $10,000 to $5 million</span>
+                                        <span>Loans from ₹10,000 to ₹5 million</span>
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
@@ -480,7 +472,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-subtle">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className={`space-y-2 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-2 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">How It Works</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     Get your loan in three simple steps
@@ -489,7 +481,7 @@ export default function Home() {
                         </div>
                         <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-3 md:gap-12">
                             <div
-                                className={`flex flex-col items-center space-y-4 text-center ${isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
+                                className={`flex flex-col items-center space-y-4 text-center ₹{isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
                             >
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-xl font-bold text-primary-foreground animate-pulse-soft">
                                     1
@@ -501,7 +493,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <div
-                                className={`flex flex-col items-center space-y-4 text-center ${isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
+                                className={`flex flex-col items-center space-y-4 text-center ₹{isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
                             >
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-xl font-bold text-primary-foreground animate-pulse-soft">
                                     2
@@ -513,7 +505,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <div
-                                className={`flex flex-col items-center space-y-4 text-center ${isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
+                                className={`flex flex-col items-center space-y-4 text-center ₹{isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
                             >
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-xl font-bold text-primary-foreground animate-pulse-soft">
                                     3
@@ -536,7 +528,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className={`space-y-2 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-2 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
                                     Testimonials
                                 </div>
@@ -550,7 +542,7 @@ export default function Home() {
                         </div>
                         <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3 lg:gap-12">
                             <Card
-                                className={`card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
+                                className={`card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-100" : "opacity-0"}`}
                             >
                                 <CardHeader>
                                     <div className="flex items-center gap-2">
@@ -581,7 +573,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                             <Card
-                                className={`card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
+                                className={`card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
                             >
                                 <CardHeader>
                                     <div className="flex items-center gap-2">
@@ -613,7 +605,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                             <Card
-                                className={`card-hover-effect ${isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
+                                className={`card-hover-effect ₹{isLoaded ? "animate-fade-up animate-delay-300" : "opacity-0"}`}
                             >
                                 <CardHeader>
                                     <div className="flex items-center gap-2">
@@ -651,7 +643,7 @@ export default function Home() {
                 <section className="w-full py-12 md:py-24 lg:py-32 gradient-primary text-primary-foreground">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-                            <div className={`space-y-4 ${isLoaded ? "animate-fade-up" : "opacity-0"}`}>
+                            <div className={`space-y-4 ₹{isLoaded ? "animate-fade-up" : "opacity-0"}`}>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                                     Ready to Find Your Perfect Loan?
                                 </h2>
@@ -677,16 +669,12 @@ export default function Home() {
                                     <Button size="lg" variant="secondary" className="w-full sm:w-auto btn-hover-effect">
                                         Get Started <ArrowRight className="ml-2 h-4 w-4" />
                                     </Button>
-                                    <Button
-                                        variant="outline"
-                                        size="lg"
-                                        className="w-full sm:w-auto border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary btn-hover-effect"
-                                    >
+                                    <Button size="lg" variant="secondary" className="w-full sm:w-auto btn-hover-effect">
                                         Learn More
                                     </Button>
                                 </div>
                             </div>
-                            <div className={`mx-auto lg:mx-0 ${isLoaded ? "animate-slide-in-right" : "opacity-0"}`}>
+                            <div className={`mx-auto lg:mx-0 ₹{isLoaded ? "animate-slide-in-right" : "opacity-0"}`}>
                                 <Card className="bg-background text-foreground card-hover-effect">
                                     <CardHeader>
                                         <CardTitle>Create Your Free Account</CardTitle>
@@ -758,11 +746,8 @@ export default function Home() {
                                 Connecting borrowers with the perfect loan since 2015. We've helped over 500,000
                                 customers find better rates and terms.
                             </p>
-                            <div className="mt-4 flex gap-4">
-                                <Link
-                                    href="#"
-                                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-                                >
+                            <div className="mt-4 gap-4">
+                                <Link href="#" className="text-muted-foreground transition-colors duration-200">
                                     <span className="sr-only">Twitter</span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -825,11 +810,8 @@ export default function Home() {
                         </div>
                         <div>
                             <h3 className="text-lg font-medium">Products</h3>
-                            <nav className="mt-4 flex flex-col space-y-2">
-                                <Link
-                                    href="#"
-                                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-                                >
+                            <nav className="mt-4 flex space-y-2">
+                                <Link href="#" className="text-sm hover:text-foreground transition-colors duration-200">
                                     Personal Loans
                                 </Link>
                                 <Link
