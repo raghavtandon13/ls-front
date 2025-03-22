@@ -18,6 +18,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
+
     return (
         <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -746,8 +747,11 @@ export default function Home() {
                                 Connecting borrowers with the perfect loan since 2015. We've helped over 500,000
                                 customers find better rates and terms.
                             </p>
-                            <div className="mt-4 gap-4">
-                                <Link href="#" className="text-muted-foreground transition-colors duration-200">
+                            <div className="mt-4 flex gap-4">
+                                <Link
+                                    href="#"
+                                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+                                >
                                     <span className="sr-only">Twitter</span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -810,8 +814,11 @@ export default function Home() {
                         </div>
                         <div>
                             <h3 className="text-lg font-medium">Products</h3>
-                            <nav className="mt-4 flex space-y-2">
-                                <Link href="#" className="text-sm hover:text-foreground transition-colors duration-200">
+                            <nav className="mt-4 flex flex-col space-y-2">
+                                <Link
+                                    href="#"
+                                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                                >
                                     Personal Loans
                                 </Link>
                                 <Link
