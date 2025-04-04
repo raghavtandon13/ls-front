@@ -16,15 +16,15 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
 
 export default function Home() {
-
     return (
         <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                 <div className="container flex h-16 items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <IndianRupee className="h-6 w-6 text-primary animate-pulse-soft" />
+                        <Image src="/lslogo.png" alt="LoanSparrow Logo" width={30} height={30} priority />
                         <span className="text-xl font-bold">LoanSparrow</span>
                     </div>
                     <nav className="hidden md:flex gap-6">
@@ -740,7 +740,7 @@ export default function Home() {
                     <div className="grid gap-8 lg:grid-cols-5">
                         <div className="lg:col-span-2">
                             <div className="flex items-center gap-2">
-                                <IndianRupee className="h-6 w-6 text-primary animate-pulse-soft" />
+                                <Image src="/lslogo.png" alt="LoanSparrow Logo" width={30} height={30} priority />
                                 <span className="text-xl font-bold">LoanSparrow</span>
                             </div>
                             <p className="mt-2 text-sm text-muted-foreground">
