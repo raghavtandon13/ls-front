@@ -1,8 +1,8 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "http://ecs-alb-1648815434.ap-south-1.elb.amazonaws.com/api/:path*"
-    }
-  ]
+    "rewrites": [
+        {
+            "source": "/api/:path*",
+            "destination": "http://13.233.136.167/api/:path*"
+        }
+    ]
 }
