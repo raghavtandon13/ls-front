@@ -744,7 +744,7 @@ export default function Home() {
                                 <span className="text-xl font-bold">LoanSparrow</span>
                             </div>
                             <p className="mt-2 text-sm text-muted-foreground">
-                                Connecting borrowers with the perfect loan since 2015. We've helped over 500,000
+                                Connecting borrowers with the perfect loan since 2025. We've helped over 500,000
                                 customers find better rates and terms.
                             </p>
                             <div className="mt-4 flex gap-4">
